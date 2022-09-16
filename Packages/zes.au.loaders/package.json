@@ -1,0 +1,20 @@
+{
+  "name": "zes.au.loaders",
+  "displayName": "Au Loaders Library",
+  "version": "0.1.0",
+  "description": "Resource Loaders Library for Au",
+  "keywords": [
+    "Script"
+  ],
+  "author": {
+    "name": "Stanley Hou",
+    "email": "houyuqing@hotmail.com",
+    "url": "https://github.com/zhihesoft/zes-unity-au-loaders"
+  },
+  "category": "Libraries",
+  "publishConfig": {
+    "registry": "https://package.openupm.com"
+  },
+  "dependencies": {
+  }
+}
