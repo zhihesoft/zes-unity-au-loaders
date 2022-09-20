@@ -59,6 +59,7 @@ namespace Au.Loaders
             {
                 bundlePath = Path.Combine(Application.streamingAssetsPath, name);
             }
+
             Debug.Assert(File.Exists(bundlePath), $"cannot find bundle in path: ({bundlePath})");
 
             var bundlereq = AssetBundle.LoadFromFileAsync(bundlePath);
