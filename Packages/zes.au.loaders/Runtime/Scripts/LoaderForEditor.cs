@@ -38,8 +38,8 @@ namespace Au.Loaders
             Scene loadedScene = default(Scene);
             UnityAction<Scene, LoadSceneMode> callback = (scene, mode) => loadedScene = scene;
             SceneManager.sceneLoaded += callback;
-            var op = EditorSceneManager.LoadSceneAsyncInPlayMode(name,
-                new LoadSceneParameters(additive ? LoadSceneMode.Additive : LoadSceneMode.Single));
+            var loadparams = new LoadSceneParameters(additive ? LoadSceneMode.Additive : LoadSceneMode.Single);
+            var op = EditorSceneManager.LoadSceneAsyncInPlayMode(name, loadparams);
             await Utils.WaitAsyncOperation(op, progress);
             SceneManager.sceneLoaded -= callback;
             return loadedScene;
