@@ -22,11 +22,11 @@ namespace Au.Loaders
         /// <param name="path"></param>
         public static void AutoCreateBundleNames(string path)
         {
-            var bundles = new DirectoryInfo(Path.Combine("Assets", path));
+            var bundles = new DirectoryInfo(Path.Combine(path));
             var dirs = bundles.GetDirectories();
             foreach (var dir in dirs)
             {
-                var importer = AssetImporter.GetAtPath(Path.Combine("Assets", path, dir.Name));
+                var importer = AssetImporter.GetAtPath(Path.Combine(path, dir.Name));
                 importer.assetBundleName = dir.Name.ToLower();
             }
             AssetDatabase.RemoveUnusedAssetBundleNames();

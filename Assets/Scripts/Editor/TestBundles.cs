@@ -6,7 +6,7 @@ public static class TestBundles
     [MenuItem("TEST/Auto Add Bundles")]
     public static void AddBundles()
     {
-        ResourceBuilder.AutoCreateBundleNames("Bundles");
+        ResourceBuilder.AutoCreateBundleNames("Assets/Bundles");
     }
 
     [MenuItem("TEST/Build Bundles")]
