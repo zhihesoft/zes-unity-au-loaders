@@ -2,7 +2,8 @@
   "name": "zes.au.loaders",
   "displayName": "Au Loaders",
   "description": "Resource Loaders Library for Au",
-  "version": "0.2.1",
+  "version": "0.2.2",
+  "private": true,
   "keywords": [
     "Script"
   ],
